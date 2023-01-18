@@ -33,7 +33,7 @@ class __enc__:
 				sv.close()
 				while ( jum >= num ):
 					njir = open(out).read().encode('utf-8')
-					sx = compile(njir, '\x1b[1;91m<\x1b[1;95m[\x1b[1;96mromz\x1b[1;95m]\x1b[1;91m>\x1b[0m', 'exec')
+					sx = compile(njir, comviles, 'exec')
 					ses = repr(marshal.dumps(sx))
 					sv = open(out, 'w')
 					sv.write(codecs % ses)
